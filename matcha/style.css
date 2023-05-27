@@ -1,0 +1,36 @@
+h1 {
+    color: #025157;
+}
+p{
+    color: #8b8b8bcc;
+}
+button {
+    color: #fff;
+    background-color: #025157;
+} 
+body {
+    background-color: #fffbf7 ;
+}
+.encabezado {
+    /* margenes externos */
+    /*margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 40px; */
+    /*      tp    r    b    l */
+        margin: 40px 20px 40px 20px;
+    /* margenes internos */
+    padding-top: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 50px;
+}
+.encabezado > * {
+    display: inline-block;
+}
+/*ul{
+    display: block;
+} */
+li{
+    display: inline;
+} 
