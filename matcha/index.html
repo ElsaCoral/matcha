@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" />
     <title>Matcha</title>
   </head>
@@ -28,7 +29,7 @@
         </nav>
         <div class="actions">
           <a>Sign In</a>
-          <button>Star free trial</button>
+          <button class="py-0">Star free trial</button>
         </div>
       </header>
     </section>
@@ -50,16 +51,11 @@
         Start publishing today with a <strong>free 7-day trial.</strong>
       </p>
       <p><strong>No credit card</strong> required.</p>
-      <img
+      <img class="imgCapterra"
         src="https://ignos.blog/wp-content/uploads/2021/04/capterra.png"
         alt="imagen capterra"
       />
     </main>
-
-    <!-- Algunos ejemplos de elementos con display block son: div, p, ul, h1, header, section, aside, nav, y muchos más.
-
-Y algunos ejemplos de elementos con display inline son: img, a, span, strong, entre otros. -->
-    <!--contenedor de video. -->
     <section class="promo">
       <article class="explanatory-video">
         <video
@@ -199,53 +195,60 @@ Y algunos ejemplos de elementos con display inline son: img, a, span, strong, en
     <section class="ecomerce">
       <article class="publicidad">
         <div class="Growing">
-        <h1><strong>Growing ecommerce brands rely on Matcha.</strong></h1>
-        <p>Are you tired of wasting time publishing blog articles to only see a trickle of traffic and no impact on sales? Join hundreds of business owners and ecommerce marketers who rely on Matcha for quality content and consistent performance from their blogs.
-        </p>
-        <button>Who uses Matcha?</button>
-        <figure>
-          <img src="" alt="Brands">
-        </figure>
-        </div>
-      
-      <article class="mambe-card">
-        <div class="image-everly">
-          <figure>
-            <img
-              src=""
-              alt="Everly-worker"
-            />
-          </figure>
-          <figure>
-            <img
-              src=""
-              alt="logo-everly"
-            />
-          </figure>
-       </div>
-       <div class="feature-content">
-          <h3>Everly</h3>
-          <p>Early-Stage CPG Brand Increases Lead Conversion 20x, Ecommerce Revenue 20%
+          <h1><strong>Growing ecommerce brands rely on Matcha.</strong></h1>
+          <p>
+            Are you tired of wasting time publishing blog articles to only see a trickle of traffic and no impact on sales? Join hundreds of business owners and ecommerce marketers who rely on Matcha for quality content and consistent performance from their blogs.
           </p>
+          <button>Who uses Matcha?</button>
           <figure>
-            <img
-              src=""
-              alt="image"
-            />
+            <img src="https://files.slack.com/files-pri/T75T8EACX-F05BY1438TC/image.png" alt="Brands">
           </figure>
-          <p>erlgkjnahekrghawkjehfk</p>
-          <button>See Case Study</button>
-
-
         </div>
-
-
-  
-          
-
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://images.squarespace-cdn.com/content/v1/56ba64b98259b5fc1ed48c85/1611596080674-878ZAG86FFGQGDY31168/Fotografia-parejas-sesiones-madrid_100.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="https://images.squarespace-cdn.com/content/v1/56ba64b98259b5fc1ed48c85/1611596080674-878ZAG86FFGQGDY31168/Fotografia-parejas-sesiones-madrid_100.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="https://images.squarespace-cdn.com/content/v1/56ba64b98259b5fc1ed48c85/1611596080674-878ZAG86FFGQGDY31168/Fotografia-parejas-sesiones-madrid_100.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </article>
-    </article>
     </section>
+
+
+    <section class="gridContainer">
+      <div class="item1">
+        <h1>How does Matcha work?</h1>
+        <p>
+        Your blog can be so much more than window dressing. Use Matcha’s simple formula to transform your blog into an ecommerce growth engine.
+        </p>
+        <button class="buttonExplore">Explore the Platform</button>
+      </div>
+      <div class="item2">publish</div>
+      <div class="item3">promote</div>
+      <div class="item4">capture</div>
+      <div class="item5">measure</div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
   </body>
 </html>

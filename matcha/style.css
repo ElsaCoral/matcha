@@ -242,3 +242,62 @@ font-size: 20px;
   border: 0;
   border-radius: 5px; 
 }
+@media (max-width: 575px) {
+  body {
+    background-color: #67b54b
+  }
+}
+@media (max-width: 700px) {
+  .imgCapterra {
+    width: 100%;
+  }
+}
+.gridContainer {
+  display: grid;
+  justify-content: space-around;
+  background-color: #343434;
+  grid-template-areas: "HOW HOW HOW HOW"
+  "publish promote capture measure";
+  padding-left: 8.5rem;
+  padding-right: 8.5rem;
+}
+
+.gridContainer div {
+  margin: 1.5rem;
+}
+.item1 {
+  grid-area: HOW;
+  text-align: center;
+  }
+
+.buttonExplore {
+  color: #fff;
+  background-color: green;
+  padding: 12px 14px 12px 14px;
+  border: 0;
+  border-radius: 10px;
+}
+
+.item2 {
+  grid-area: publish;
+  background-color: #025157;
+  height: 400px;
+  border: #343434;
+  border-radius: 5px;
+}
+.item3 {
+  grid-area: promote;
+  background-color: red;
+  border-radius: 5px;
+}
+.item4 {
+  grid-area:capture;
+  background-color: purple;
+  border-radius: 5px;
+}
+.item5 {
+  grid-area: measure;
+  background-color: yellow;
+  border-radius: 5px;
+}
+
