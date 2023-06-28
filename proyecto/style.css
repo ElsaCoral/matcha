@@ -1,0 +1,11 @@
+body, html, .bienvenidos{
+    height: 100%;
+}
+.bienvenidos {
+    background-image: url("https://media.vogue.es/photos/5cc7143bf3f6cc84016d660e/16:9/pass/de_ruta_por_los_mejores_spa_6332.jpg");
+    height: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+

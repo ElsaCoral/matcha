@@ -36,31 +36,36 @@ body {
   vertical-align: middle;
   height: 100%;
 }
-.matcha {
+.logo > img {
   width: 15%;
 }
 .navbar {
-  display: inline-block;
-  width: 70%;
   text-align: center;
   color: #025157;
-  align-content: space-around;
+  background-color: #fffbf7;
+  font-weight: 500;
 }
 .navbar ul li a {
   text-decoration: none;
-  color: rgba(0, 0, 0, .9);
+  color: rgba(0, 0, 0, 0.9);
 }
 li {
   display: inline;
 }
 .actions {
-  width: 15%;
-  text-align: left;
+  display: inline;
+  text-align: center;
   font-size: 14px;
   font-weight: 600;
 }
+
+.actions > * {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
 .actions a {
-  color:#67b54b;
+  color: #67b54b;
 }
 .actions button {
   color: #fff;
@@ -80,9 +85,9 @@ h1 {
   margin-bottom: 24px;
 }
 p {
-color: #8b8b8bcc;
-font-family: Verdana;
-font-size: 20px;
+  color: #8b8b8bcc;
+  font-family: Verdana;
+  font-size: 20px;
 }
 .main button {
   color: #fff;
@@ -192,41 +197,146 @@ font-size: 20px;
   margin-top: 0;
   height: 100%;
 }
-.ecomerce {
+
+
+.success-stories {
   background-color: #a1d683;
-  padding: 5% 10%;
+  padding: 5% 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
-.ecomerce .publicidad {
-  margin-bottom: 30px;
-    margin-left: 15px;
-    margin-right: 15px;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
+
+.success-stories .overview {
+  flex: 2;
+  padding-right: 100px;
 }
-.Growing {
-  background-color: #a1d683;
-  padding-right: 10%;
-}
-.Growing h1 {
-  color: #025157;
+
+.success-stories .overview h2 {
   font-family: "Alegreya", serif;
-  margin-bottom: 24px;
   font-size: 51px;
   line-height: 61px;
-  font-weight: 500;
-  text-align: left;
+  color: #025157;
 }
-.Growing p {
+
+.success-stories .overview p {
   color: #343434;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 1rem;
 }
-.Growing button {
-  color: #fff;
-  background-color: #67b54b;
-  padding: 12px 14px 12px 14px;
-  border: 0;
+
+.success-stories .overview button {
+  font-size: 14px;
+  padding: 12px 12px 6px 12px;
+  border-radius: 8px;
+  height: 45px;
+  font-weight: 600;
+  margin-left: 0;
+}
+
+.success-stories .overview img {
+  width: 500px;
+  max-width: 100%;
+}
+
+
+/* Cambiamos el alto mínimo de la tarjeta, para que se vea bien en responsive */
+.success-stories .card {
+  max-width: 370px;
+  width: 100%;
+  min-height: 600px;
+  margin: 0 auto;
+}
+
+/* Con object-fit, hacemos que la imagen se ajuste a la medida de su contenedor y limitamos su alto */
+.success-stories .card img {
+  max-height: 30vh;
+  object-fit: cover;
+}
+
+/* Agregamos position: relative para recibir un elemento con position:absolute más adelante */
+.success-stories .card .card-body {
+  max-width: 370px;
+  width: 100%;
+  position: relative;
+  padding: 40px 1rem 1rem;
+}
+
+/* Estos son los estilos para textos y acomodo de elementos */
+.success-stories .card .card-body h4 {
+  color: #025157;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 20px;
+  margin-bottom: 12px;
+  font-family: "Slabo 27px", serif;
+}
+
+.success-stories .card .card-body h3 {
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+.success-stories .card .card-body .results {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.success-stories .card .card-body .results img {
+  width: 26px;
+  margin-right: 20px;
+}
+
+.success-stories .card .card-body .results p {
+  margin: 0;
+}
+
+.success-stories .card .card-footer button {
+  display: block;
+  margin-left: 0;
   border-radius: 5px;
+  font-size: 13;
+  font-weight: 600;
+  padding: 12px 20px;
+  width: 100%;
+  background-color: #025157;
+  color: #fff;
+  border: none;
+}
+
+.success-stories .card .card-footer {
+  background-color: #ffffff;
+  color: #fff;
+  border: none;
+}
+
+/* Aqui hacemos un círculo con CSS! Este se posicionará en el margen superior de .card-body */
+.success-stories .card .card-body .card-circle {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top:-45px;
+  right: 20px;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+/* Cada círculo tiene su propio color. Verifica qué significa este selector: .card-circle.everly */
+.success-stories .card .card-body .card-circle.everly {
+  background-color: #f9da73;
+  border: 5px solid #f9da73;
+}
+
+/* Los círculos deben recibir la imagen y ajustarla al tamaño */
+.success-stories .card .card-body .card-circle.everly img {
+  object-fit: contain;
+  width: 100%;
 }
 
 .mambe-card {
@@ -240,24 +350,16 @@ font-size: 20px;
   background-color: #67b54b;
   padding: 12px 14px 12px 14px;
   border: 0;
-  border-radius: 5px; 
+  border-radius: 5px;
 }
-@media (max-width: 575px) {
-  body {
-    background-color: #67b54b
-  }
-}
-@media (max-width: 700px) {
-  .imgCapterra {
-    width: 100%;
-  }
-}
+
 .gridContainer {
   display: grid;
   justify-content: space-around;
   background-color: #343434;
-  grid-template-areas: "HOW HOW HOW HOW"
-  "publish promote capture measure";
+  grid-template-areas:
+    "HOW HOW HOW HOW"
+    "publish promote capture measure";
   padding-left: 8.5rem;
   padding-right: 8.5rem;
 }
@@ -268,7 +370,7 @@ font-size: 20px;
 .item1 {
   grid-area: HOW;
   text-align: center;
-  }
+}
 
 .buttonExplore {
   color: #fff;
@@ -291,7 +393,7 @@ font-size: 20px;
   border-radius: 5px;
 }
 .item4 {
-  grid-area:capture;
+  grid-area: capture;
   background-color: purple;
   border-radius: 5px;
 }
@@ -301,3 +403,90 @@ font-size: 20px;
   border-radius: 5px;
 }
 
+/** dispositivos móviles en vista viewport (vertical) */
+@media (max-width: 575px) {
+  body {
+    background-color: #67b54b;
+  }
+
+  .navbar,
+  .actions {
+    display: none;
+    text-align: center;
+  }
+
+  .main {
+    margin-top: 130px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .promo {
+    flex-direction: column;
+    max-width: 90%;
+  }
+
+  .explanatory-video > video {
+    width: 100%;
+  }
+
+  .publish {
+    margin-top: 10px;
+  }
+
+  .publish > h3 {
+    font-size: 25px;
+    line-height: 1.2;
+  }
+
+  .publish > form {
+    flex-direction: column;
+  }
+
+  .publish > form > div {
+    height: 50px;
+    margin-top: 10px;
+  }
+
+  .publish > form > div > input {
+    width: 65%;
+  }
+
+  .features {
+    grid-template: repeat(4, 1fr) / 1fr;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .feature-image {
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  .actions,
+  .navbar {
+    text-align: center;
+  }
+}
+
+/** dispositivos pequeños en vista landscape (horizontal) */
+@media (min-width: 576px) and (max-width: 767px) {
+  .imgCapterra {
+    width: 100%;
+  }
+}
+
+/** dispositivos medianos (tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+/** dispositivos grandes (desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/** dispositivos extra grandes (monitores grandes, tvs) */
+@media (min-width: 1200px) {
+}
